@@ -1,0 +1,16 @@
+install scala 2.13
+scala -version
+----------------------------------------------------------------------
+move kafka files to the C:\kafka_2.12-3.9.1
+----------------------------------------------------------------------
+define environment variable for kafka
+KAFKA_HOME => C:\kafka_2.12-3.9.1
+IN PATH => %KAFKA_HOME%\bin
+-----------------------------------------------------------------------
+cd C:\kafka_2.12-3.9.1
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+-----------------------------------------------------------------------
+cd C:\kafka_2.12-3.9.1
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+-----------------------------------------------------------------------
+.\bin\windows\kafka
