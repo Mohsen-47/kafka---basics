@@ -19,7 +19,7 @@ public class OrderController {
 
 
     @PostMapping("/send-buy-order")
-    public void sentOrder(@RequestBody(required = true) BuyOrderRequest request) {
+    public void sentOrder(@RequestBody() BuyOrderRequest request) {
         orderService.buyOrder(request);
     }
 
